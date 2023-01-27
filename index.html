@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Books</title>
+    <link rel="stylesheet" href="./trackbook.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65e9ac7cab.js" crossorigin="anonymous"></script>
+    <script async src="./trackbook.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div class="book_lists">
+            <h1>BOOK<i class="fa fa-book book_icon"></i>LISTS</h1>
+        </div>
+
+        <div class="books_image">
+            <img src="./images/book_review-removebg-preview.png" alt="books-image">
+        </div>
+
+        <div class="required">
+            <h5>All fields are REQUIRED</h3>
+        </div>
+
+        <div class="book-added">
+            <h5>Your Book has been ADDED</h3>
+        </div>
+
+        <div class="book-removed">
+            <h5>Your Book has been REMOVED</h3>
+        </div>
+
+        <div id="form_div">
+            <form action="#">
+                <p style="color: white;">Title</p>
+                <input type="text" id="title" class="title_input">
+                <span style="color: white; font-size: 12px; display: none;" id="title-regex">You must start with an Uppercase</span>
+    
+                <p style="color: white;">Author</p>
+                <input type="text" id="author" class="author_input">
+                <span style="color: white; font-size: 12px; display: none;" id="author-regex">You must start with an Uppercase</span>
+    
+                <p style="color: white;">ISBN</p>
+                <input type="text" id="isbn" class="isbn_input">
+                <span style="color: white; font-size: 12px; display: none;" id="isbn-regex">Enter a Valid Number</span>
+    
+                <button id="btn">SUBMIT</button>
+            </form> 
+        </div>
+
+        <div id="table-div">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Title</td>
+                        <td>Author</td>
+                        <td>ISBN</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>Selflessness</td>
+                        <td>Brian Racy</td>
+                        <td>ABC2023</td>
+                        <td><button class="remove"><i class="fa fa-times table_btn"></i></button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

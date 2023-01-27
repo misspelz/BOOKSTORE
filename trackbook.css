@@ -1,0 +1,171 @@
+*,
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#main{
+    width: 80%;
+    margin: 20px auto;
+}
+.book_lists h1{
+    text-align: center;
+    font-size: 40px;
+}
+    
+.book_icon{
+    margin: 0 20px;
+    color: rgb(35, 101, 35)
+}
+.books_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.required{
+    display: none;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    margin-top: 20px;
+    background-color: red;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.book-added{
+    display: none;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(196, 148, 14);
+    padding: 10px 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.book-removed{
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(14, 172, 196);
+    padding: 10px 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+form{
+    background-color: rgb(35, 101, 35);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+#form_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title, #author, #isbn, #btn{
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+}
+#title, #author, #book-isbn{
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+#btn{
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+label{
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+}
+#table-div{
+    overflow-x: auto;
+    margin: 30px auto;
+    width: 80%;
+}
+#table-div table{
+    min-width: 600px;
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+#table-div table thead{
+    font-weight: bold;
+}
+#table-div table td{
+    border: 1px solid #000;
+    width: 20%;
+    text-align: center;
+    padding: 15px;
+}
+.table_btn{
+    padding: 10px 12px;
+    background-color: rgb(35, 101, 35);
+    font-size: 20px;
+    color: white;
+}
+
+/* @media screen and (min-width: 480px){
+    #main{
+        margin: 0 auto;
+        width: 60%;
+    }
+    .book_lists{
+        font-size: 14px;
+    }
+} */
+
+@media screen and (min-width: 640px){
+    #main{
+        margin: 20px auto;
+        width: 80%;
+    }
+    .book_lists h1{
+        font-size: 60px;
+    }
+    form{
+        margin-top: 35px;
+        width: 60%;
+    }   
+    #form_div form{
+        width: 100%;
+        margin: 30px auto;
+    }
+    /* .required{
+        width: 80%;
+        margin: 0 auto;
+    } */
+}
+
+@media screen and (min-width: 768px){
+    #table-div table{
+        min-width: 400px;
+        width: 70%;
+    }
+    #form_div form{
+        width: 60%;
+        margin: 30px auto;
+    }
+    /* .required{
+        width: 60%;
+        margin: 0 auto;
+    } */
+}
